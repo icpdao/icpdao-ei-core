@@ -1,4 +1,4 @@
-from models import EiIssue
+from models.ei_issue import EiIssue
 
 from .ei_issue_pair_issue_processor import EiIssuePairIssueProcessor
 from .ei_issue_pair_voter_processor import EiIssuePairVoterProcessor
@@ -48,7 +48,7 @@ class EiProcessor(object):
                 issue_size = round(issue_size + issue.size, 2)
                 issue_list.append(issue.to_dict())
 
-            if issue.t == "pull_request":
+            if issue.type == "pull_request":
                 pull_request_count = pull_request_count + 1
                 pull_request_size = round(pull_request_size + issue.size, 2)
                 pull_request_list.append(issue.to_dict())

@@ -61,7 +61,7 @@ class IssuePairVoterHistoryRate:
                 vote_count = self.vote_count_stat[u1][u2]
                 issue_pari_count = self.issue_pari_count_stat[u1]
 
-                _set_rate(u1, u2, vote_count/issue_pari_count)
+                self._set_rate(u1, u2, vote_count/issue_pari_count)
 
     def _set_issue_pari_count_stat(self, key, add_value):
         old_value = self.issue_pari_count_stat.get(key, 0)

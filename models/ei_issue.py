@@ -19,13 +19,13 @@ class EiIssue(object):
         """
         self.type = _type
 
-        self.org = self.org
-        self.repo = self.repo
-        self.number = self.number
+        self.org = org
+        self.repo = repo
+        self.number = number
 
         self.title = title
         self.contributer = contributer
-        self.labels = labels
+        self.labels = set(labels)
         
         self.size = size
         self.reviewer = reviewer

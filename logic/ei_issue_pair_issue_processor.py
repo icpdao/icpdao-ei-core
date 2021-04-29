@@ -14,7 +14,7 @@ class EiIssuePairIssueProcessor:
         self.ei_issue_pair_list = []
         self.total_weight = 0
         self.pair_count = 0
-        self.pair_success = False
+        self.pair_success = True
         self.un_pair_ei_issue_list = []
         self.try_count = 10
 
@@ -28,10 +28,6 @@ class EiIssuePairIssueProcessor:
 
     def process(self):
         if len(self.ei_issue_list) == 0:
-            self.ei_issue_pair_list = []
-            self.total_weight = 0
-            self.pair_success = True
-            self.un_pair_ei_issue_list = []
             return
 
         for i in range(self.try_count):
@@ -170,7 +166,6 @@ class EiIssuePairIssueProcessor:
 
     def valid_ei_issue_pair(self, left, right):
         weight = EiIssueWeightProcessor(self.ei_issue_pair_list, self.ei_config).get_weight(left, right)
-
         if weight <= 0:
             return False
 

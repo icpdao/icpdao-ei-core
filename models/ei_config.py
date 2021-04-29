@@ -16,7 +16,8 @@ class EiConfig:
         pair_reviewer_rate_list,
         coder_ability_list,
         coder_ability_list_for_reviewer,
-        tmp_skip_voter_list
+        tmp_skip_voter_list,
+        other_c_list
         ):
         """
         label_rate = 0.9  # label分类相同权值
@@ -74,70 +75,16 @@ default_config = EiConfig(
     reserved_word = ["ICP", "IN PROGRESS", "BUG"],
     have_ci_threshold = 0.8,
     pair_reviewer_rate_list = {
-        "nancy919": {
-            "ben7th": 15
+        "user_xxx": {
+            "user_yyy": 15
         }
     },
     coder_ability_list = {
-        "georgeliuyu":   0.9,
-        'ben7th':        0.6,
-        'ax003d':        0.6,
-        'sinchb':        0.6,
-        'fushang318':    0.6,
-        'bqx619':        0.6,
-        'zhaobinglong':  0.6,
-        'HaomingDave':   0.6,
-        'hnuyx':         0.6,
-        'Yidadaa':       0.6,
-        'nullscc':       0.6,
-        'akakenle':      0.6,
-        'nancy919':      0.6,
-        'pimgeek':       0.6,
-        'Davidliu027':   0.6,
-        'WangWanyue':    0.3,
-        'jinniudashu':   0.3,
-        'maohuaming':    0.3,
-        "zhanhh187":     0.3,
-        'fangrongxaing': 0.05,
-        'shero3':        0.05,
-        'Jessica124':    0.05,
-        'fazhen':        0.05,
-        'kimgrace6':     0.05,
-        'alisahuxu':     0.05,
-        'skytian1':      0.05,
-        'aixinhuang':    0.05,
-        'Yijia-Zhou':    0.6
+        "user_xxx":   0.9
     },
     coder_ability_list_for_reviewer = {
-        "georgeliuyu":   0.9,
-        'ben7th':        0.6,
-        'ax003d':        0.9,
-        'sinchb':        0.9,
-        'fushang318':    0.5,
-        'bqx619':        0.5,
-        'zhaobinglong':  0.5,
-        'HaomingDave':   0.5,
-        'hnuyx':         0.6,
-        'Yidadaa':       0.7,
-        'nullscc':       0.5,
-        'akakenle':      0.5,
-        'nancy919':      0.5,
-        'pimgeek':       0.5,
-        'Davidliu027':   0.5,
-        'WangWanyue':    0.3,
-        'jinniudashu':   0.3,
-        'maohuaming':    0.05,
-        "zhanhh187":     0.05,
-        'fangrongxaing': 0.05,
-        'shero3':        0.05,
-        'Jessica124':    0.05,
-        'fazhen':        0.05,
-        'kimgrace6':     0.05,
-        'alisahuxu':     0.05,
-        'skytian1':      0.05,
-        'aixinhuang':    0.05,
-        'Yijia-Zhou':    0.5
+        "user_xxx":   0.9
     },
-    tmp_skip_voter_list = ['pimgeek'],
-    other_c_list = ["georgeliuyu"]
+    tmp_skip_voter_list = ['user_xxx'],
+    other_c_list = ["user_xxx"]
 )

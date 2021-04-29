@@ -1,0 +1,6538 @@
+{
+ "period": "2",
+ "c_stat_dict": {
+  "user_0": {
+   "issue_count": 9,
+   "issue_size": 9.7,
+   "issue_list": [
+    {
+     "title": "issue | org_a | repo_a | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 1,
+     "size": 0.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/1"
+    },
+    {
+     "title": "issue | org_a | repo_a | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 2,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/2"
+    },
+    {
+     "title": "issue | org_a | repo_a | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 3,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/3"
+    },
+    {
+     "title": "issue | org_b | repo_d | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 2,
+     "size": 1.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/2"
+    },
+    {
+     "title": "issue | org_a | repo_a | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 5,
+     "size": 0.9,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/5"
+    },
+    {
+     "title": "issue | org_b | repo_d | 4",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 4,
+     "size": 1.3,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/4"
+    },
+    {
+     "title": "issue | org_a | repo_b | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 1,
+     "size": 1.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/1"
+    },
+    {
+     "title": "issue | org_a | repo_b | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 3,
+     "size": 1.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/3"
+    },
+    {
+     "title": "issue | org_b | repo_d | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 5,
+     "size": 2.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/5"
+    }
+   ],
+   "pull_request_count": 8,
+   "pull_request_size": 12.0,
+   "pull_request_list": [
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 4,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/4"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 3,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/3"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 1,
+     "size": 1.5,
+     "title": "pull_request | org_b | repo_c | 1",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/1"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 2,
+     "size": 1.6,
+     "title": "pull_request | org_a | repo_b | 2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/2"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 6,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_a | 6",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/6"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 7,
+     "size": 2.4,
+     "title": "pull_request | org_a | repo_a | 7",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/7"
+    },
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 4,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/4"
+    }
+   ]
+  },
+  "user_1": {
+   "issue_count": 10,
+   "issue_size": 12.5,
+   "issue_list": [
+    {
+     "title": "issue | org_a | repo_a | 8",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 8,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/8"
+    },
+    {
+     "title": "issue | org_a | repo_b | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 6,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/6"
+    },
+    {
+     "title": "issue | org_b | repo_d | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 6,
+     "size": 0.8,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/6"
+    },
+    {
+     "title": "issue | org_a | repo_b | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 7,
+     "size": 1.1,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/7"
+    },
+    {
+     "title": "issue | org_b | repo_d | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 7,
+     "size": 1.6,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/7"
+    },
+    {
+     "title": "issue | org_b | repo_c | 2",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 2,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/2"
+    },
+    {
+     "title": "issue | org_a | repo_a | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 10,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/10"
+    },
+    {
+     "title": "issue | org_a | repo_a | 11",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 11,
+     "size": 1.2,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/11"
+    },
+    {
+     "title": "issue | org_a | repo_a | 12",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 12,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/12"
+    },
+    {
+     "title": "issue | org_b | repo_d | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 10,
+     "size": 1.9,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/10"
+    }
+   ],
+   "pull_request_count": 8,
+   "pull_request_size": 8.7,
+   "pull_request_list": [
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 5,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 5",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/5"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 9,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_a | 9",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/9"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 8,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 8",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/8"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 9,
+     "size": 0.8,
+     "title": "pull_request | org_a | repo_b | 9",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/9"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 10,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_b | 10",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/10"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 8,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 8",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/8"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 9,
+     "size": 1.9,
+     "title": "pull_request | org_b | repo_d | 9",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/9"
+    },
+    {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 11,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 11",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/11"
+    }
+   ]
+  },
+  "user_2": {
+   "issue_count": 9,
+   "issue_size": 13.5,
+   "issue_list": [
+    {
+     "title": "issue | org_a | repo_b | 12",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 12,
+     "size": 0.5,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/12"
+    },
+    {
+     "title": "issue | org_a | repo_b | 16",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 16,
+     "size": 0.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/16"
+    },
+    {
+     "title": "issue | org_a | repo_b | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 17,
+     "size": 0.8,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/17"
+    },
+    {
+     "title": "issue | org_a | repo_b | 18",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 18,
+     "size": 1.6,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/18"
+    },
+    {
+     "title": "issue | org_a | repo_b | 21",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 21,
+     "size": 1.3,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/21"
+    },
+    {
+     "title": "issue | org_a | repo_b | 22",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 22,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/22"
+    },
+    {
+     "title": "issue | org_b | repo_d | 11",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 11,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/11"
+    },
+    {
+     "title": "issue | org_a | repo_a | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 17,
+     "size": 2.4,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/17"
+    },
+    {
+     "title": "issue | org_a | repo_b | 23",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 23,
+     "size": 2.2,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/23"
+    }
+   ],
+   "pull_request_count": 9,
+   "pull_request_size": 10.4,
+   "pull_request_list": [
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 13,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 13",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/13"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 14,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_b | 14",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/14"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 15,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 15",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/15"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 13,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 13",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/13"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 14,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_a | 14",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/14"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 15,
+     "size": 1.4,
+     "title": "pull_request | org_a | repo_a | 15",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/15"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 19,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 19",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/19"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 20,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_b | 20",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/20"
+    },
+    {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 16,
+     "size": 2.1,
+     "title": "pull_request | org_a | repo_a | 16",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/16"
+    }
+   ]
+  },
+  "user_3": {
+   "issue_count": 7,
+   "issue_size": 12.0,
+   "issue_list": [
+    {
+     "title": "issue | org_b | repo_c | 5",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 5,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/5"
+    },
+    {
+     "title": "issue | org_b | repo_d | 15",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 15,
+     "size": 1.5,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/15"
+    },
+    {
+     "title": "issue | org_b | repo_d | 17",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 17,
+     "size": 1.8,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/17"
+    },
+    {
+     "title": "issue | org_a | repo_a | 19",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 19,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/19"
+    },
+    {
+     "title": "issue | org_a | repo_b | 26",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 26,
+     "size": 2.0,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/26"
+    },
+    {
+     "title": "issue | org_b | repo_d | 18",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 18,
+     "size": 2.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/18"
+    },
+    {
+     "title": "issue | org_a | repo_a | 20",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 20,
+     "size": 2.1,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/20"
+    }
+   ],
+   "pull_request_count": 11,
+   "pull_request_size": 12.2,
+   "pull_request_list": [
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 12,
+     "size": 0.4,
+     "title": "pull_request | org_b | repo_d | 12",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/12"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 3,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_c | 3",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/3"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 13,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 13",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/13"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 4,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_c | 4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/4"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 14,
+     "size": 1.0,
+     "title": "pull_request | org_b | repo_d | 14",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/14"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 18,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_a | 18",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/18"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 6,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_c | 6",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/6"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 16,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 16",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/16"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 24,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 24",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/24"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 25,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_b | 25",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/25"
+    },
+    {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 27,
+     "size": 2.0,
+     "title": "pull_request | org_a | repo_b | 27",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/27"
+    }
+   ]
+  },
+  "user_4": {
+   "issue_count": 9,
+   "issue_size": 12.8,
+   "issue_list": [
+    {
+     "title": "issue | org_a | repo_b | 28",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 28,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/28"
+    },
+    {
+     "title": "issue | org_a | repo_b | 30",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 30,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/30"
+    },
+    {
+     "title": "issue | org_a | repo_b | 32",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 32,
+     "size": 1.0,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/32"
+    },
+    {
+     "title": "issue | org_a | repo_a | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/22"
+    },
+    {
+     "title": "issue | org_a | repo_a | 24",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 24,
+     "size": 1.2,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/24"
+    },
+    {
+     "title": "issue | org_b | repo_d | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/22"
+    },
+    {
+     "title": "issue | org_b | repo_c | 7",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 7,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/7"
+    },
+    {
+     "title": "issue | org_a | repo_a | 25",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 25,
+     "size": 2.4,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/25"
+    },
+    {
+     "title": "issue | org_a | repo_b | 33",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 33,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/33"
+    }
+   ],
+   "pull_request_count": 8,
+   "pull_request_size": 8.5,
+   "pull_request_list": [
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 21,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_a | 21",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/21"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 29,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 29",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/29"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 19,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_d | 19",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/19"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 31,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 31",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/31"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 20,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 20",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/20"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 21,
+     "size": 0.9,
+     "title": "pull_request | org_b | repo_d | 21",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/21"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 23,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_a | 23",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/23"
+    },
+    {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 8,
+     "size": 2.3,
+     "title": "pull_request | org_b | repo_c | 8",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/8"
+    }
+   ]
+  }
+ },
+ "ei_issue_pair_issue_processor_info": {
+  "ei_issue_pair_list": [
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 31,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 31",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/31"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 8,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 8",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/8"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 24",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 24,
+     "size": 1.2,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/24"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 19",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 19,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/19"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 12",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 12,
+     "size": 0.5,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/12"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 30",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 30,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/30"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 8,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 8",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/8"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 31,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 31",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/31"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 19",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 19,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/19"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 24",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 24,
+     "size": 1.2,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/24"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 13,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 13",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/13"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 1,
+     "size": 0.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/1"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 8",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 8,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/8"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 15,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 15",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/15"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 29,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 29",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/29"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 4,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/4"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 13,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 13",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/13"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 15",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 15,
+     "size": 1.5,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/15"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/22"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 13,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 13",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/13"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 17,
+     "size": 2.4,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/17"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 25",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 25,
+     "size": 2.4,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/25"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 19,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 19",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/19"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 4,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/4"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 28",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 28,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/28"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 12",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 12,
+     "size": 0.5,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/12"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 11",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 11,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/11"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 10,
+     "size": 1.9,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/10"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 13,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 13",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/13"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 4,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/4"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 16,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 16",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/16"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 8,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 8",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/8"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 8",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 8,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/8"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 1,
+     "size": 0.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/1"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 25",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 25,
+     "size": 2.4,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/25"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 17,
+     "size": 2.4,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/17"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 20,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 20",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/20"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 3,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/3"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 8,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 8",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/8"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 16,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 16",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/16"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 10,
+     "size": 1.9,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/10"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 11",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 11,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/11"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/22"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 15",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 15,
+     "size": 1.5,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/15"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 21",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 21,
+     "size": 1.3,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/21"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 4",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 4,
+     "size": 1.3,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/4"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 4",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 4,
+     "size": 1.3,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/4"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 21",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 21,
+     "size": 1.3,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/21"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 3,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/3"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 9,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_a | 9",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/9"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 21,
+     "size": 0.9,
+     "title": "pull_request | org_b | repo_d | 21",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/21"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 14,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_a | 14",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/14"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 14,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_a | 14",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/14"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 21,
+     "size": 0.9,
+     "title": "pull_request | org_b | repo_d | 21",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/21"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 21,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_a | 21",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/21"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 15,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 15",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/15"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 30",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 30,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/30"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 2,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/2"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 9,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_a | 9",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/9"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 3,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/3"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 23",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 23,
+     "size": 2.2,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/23"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 18",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 18,
+     "size": 2.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/18"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_c | 7",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 7,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/7"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 5,
+     "size": 2.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/5"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 18",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 18,
+     "size": 2.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/18"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 23",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 23,
+     "size": 2.2,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/23"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 14,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_b | 14",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/14"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 4,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_c | 4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/4"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 18,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_a | 18",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/18"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 10,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_b | 10",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/10"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 11",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 11,
+     "size": 1.2,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/11"
+    },
+    "right": {
+     "title": "issue | org_b | repo_c | 5",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 5,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/5"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 5,
+     "size": 2.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/5"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 20",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 20,
+     "size": 2.1,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/20"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 23,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_a | 23",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/23"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 20,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_b | 20",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/20"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 22",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 22,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/22"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 25,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_b | 25",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/25"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 9,
+     "size": 1.9,
+     "title": "pull_request | org_b | repo_d | 9",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/9"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 6,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_a | 6",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/6"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 6,
+     "size": 0.8,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/6"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 17,
+     "size": 0.8,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/17"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 5,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 5",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/5"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 12,
+     "size": 0.4,
+     "title": "pull_request | org_b | repo_d | 12",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/12"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 19,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_d | 19",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/19"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 3,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_c | 3",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/3"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 6,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/6"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 13,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 13",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/13"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 6,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_c | 6",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/6"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 20,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 20",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/20"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 25,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_b | 25",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/25"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 22",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 22,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/22"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 1,
+     "size": 1.5,
+     "title": "pull_request | org_b | repo_c | 1",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/1"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 23,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_a | 23",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/23"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 6,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_a | 6",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/6"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 9,
+     "size": 1.9,
+     "title": "pull_request | org_b | repo_d | 9",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/9"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 17,
+     "size": 0.8,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/17"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 6,
+     "size": 0.8,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/6"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 2,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/2"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 28",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 28,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/28"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 13,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 13",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/13"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 6,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/6"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 3,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_c | 3",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/3"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 21,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_a | 21",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/21"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 4,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_c | 4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/4"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 14,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_b | 14",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/14"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_c | 5",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 5,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/5"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 11",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 11,
+     "size": 1.2,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/11"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/22"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 3,
+     "size": 1.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/3"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 20",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 20,
+     "size": 2.1,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/20"
+    },
+    "right": {
+     "title": "issue | org_b | repo_c | 7",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 7,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/7"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 7,
+     "size": 1.1,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/7"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 2,
+     "size": 1.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/2"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 3,
+     "size": 1.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/3"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/22"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 20,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_b | 20",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/20"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 1,
+     "size": 1.5,
+     "title": "pull_request | org_b | repo_c | 1",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/1"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 10,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_b | 10",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/10"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 18,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_a | 18",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/18"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 5,
+     "size": 0.9,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/5"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 16",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 16,
+     "size": 0.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/16"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 16",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 16,
+     "size": 0.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/16"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 5,
+     "size": 0.9,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/5"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 3,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/3"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 6,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_c | 6",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/6"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 12,
+     "size": 0.4,
+     "title": "pull_request | org_b | repo_d | 12",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/12"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 5,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 5",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/5"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 2,
+     "size": 1.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/2"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 7,
+     "size": 1.1,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/7"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 1,
+     "size": 1.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/1"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 15,
+     "size": 1.4,
+     "title": "pull_request | org_a | repo_a | 15",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/15"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 15,
+     "size": 1.4,
+     "title": "pull_request | org_a | repo_a | 15",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/15"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 1,
+     "size": 1.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/1"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_c | 2",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 2,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/2"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 24,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 24",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/24"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 24,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 24",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/24"
+    },
+    "right": {
+     "title": "issue | org_b | repo_c | 2",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 2,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/2"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 7,
+     "size": 1.6,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/7"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 2,
+     "size": 1.6,
+     "title": "pull_request | org_a | repo_b | 2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/2"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 32",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 32,
+     "size": 1.0,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/32"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 14,
+     "size": 1.0,
+     "title": "pull_request | org_b | repo_d | 14",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/14"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 2,
+     "size": 1.6,
+     "title": "pull_request | org_a | repo_b | 2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/2"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 7,
+     "size": 1.6,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/7"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 14,
+     "size": 1.0,
+     "title": "pull_request | org_b | repo_d | 14",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/14"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 32",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 32,
+     "size": 1.0,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/32"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 33",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 33,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/33"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 26",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 26,
+     "size": 2.0,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/26"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 26",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 26,
+     "size": 2.0,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/26"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 33",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 33,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/33"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 7,
+     "size": 2.4,
+     "title": "pull_request | org_a | repo_a | 7",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/7"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 8,
+     "size": 2.3,
+     "title": "pull_request | org_b | repo_c | 8",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/8"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 8,
+     "size": 2.3,
+     "title": "pull_request | org_b | repo_c | 8",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/8"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 7,
+     "size": 2.4,
+     "title": "pull_request | org_a | repo_a | 7",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/7"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 4,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/4"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 11,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 11",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/11"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 11,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 11",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/11"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 19,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 19",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/19"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 16,
+     "size": 2.1,
+     "title": "pull_request | org_a | repo_a | 16",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/16"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 27,
+     "size": 2.0,
+     "title": "pull_request | org_a | repo_b | 27",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/27"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 27,
+     "size": 2.0,
+     "title": "pull_request | org_a | repo_b | 27",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/27"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 16,
+     "size": 2.1,
+     "title": "pull_request | org_a | repo_a | 16",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/16"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 12",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 12,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/12"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 17",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 17,
+     "size": 1.8,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/17"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 17",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 17,
+     "size": 1.8,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/17"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 12",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 12,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/12"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 18",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 18,
+     "size": 1.6,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/18"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 10,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/10"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 10,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/10"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 18",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 18,
+     "size": 1.6,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/18"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 29,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 29",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/29"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 9,
+     "size": 0.8,
+     "title": "pull_request | org_a | repo_b | 9",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/9"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 9,
+     "size": 0.8,
+     "title": "pull_request | org_a | repo_b | 9",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/9"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 19,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_d | 19",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/19"
+    },
+    "github_user_name": "user_0"
+   }
+  ],
+  "total_weight": 55615.15834201679,
+  "pair_success": true,
+  "un_pair_ei_issue_list": [],
+  "un_need_pair_ei_issue_list": [],
+  "pair_count": 1
+ },
+ "ei_issue_pair_voter_processor_info": {
+  "have_voter_ei_issue_pair_list": [
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 31,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 31",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/31"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 8,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 8",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/8"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 24",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 24,
+     "size": 1.2,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/24"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 19",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 19,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/19"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 12",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 12,
+     "size": 0.5,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/12"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 30",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 30,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/30"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 8,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 8",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/8"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 31,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_b | 31",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/31"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 19",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 19,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/19"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 24",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 24,
+     "size": 1.2,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/24"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 13,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 13",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/13"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 1,
+     "size": 0.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/1"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 8",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 8,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/8"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 15,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 15",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/15"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 29,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 29",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/29"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 4,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/4"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 13,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 13",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/13"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 15",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 15,
+     "size": 1.5,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/15"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/22"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 13,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 13",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/13"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 17,
+     "size": 2.4,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/17"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 25",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 25,
+     "size": 2.4,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/25"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 19,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 19",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/19"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 4,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/4"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 28",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 28,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/28"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 12",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 12,
+     "size": 0.5,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/12"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 11",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 11,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/11"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 10,
+     "size": 1.9,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/10"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 13,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 13",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/13"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 4,
+     "size": 1.2,
+     "title": "pull_request | org_a | repo_a | 4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/4"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 16,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 16",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/16"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 8,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 8",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/8"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 8",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 8,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/8"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 1,
+     "size": 0.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/1"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 25",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 25,
+     "size": 2.4,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/25"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 17,
+     "size": 2.4,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/17"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 20,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 20",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/20"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 3,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/3"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 8,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 8",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/8"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 16,
+     "size": 1.4,
+     "title": "pull_request | org_b | repo_d | 16",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/16"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 10,
+     "size": 1.9,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/10"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 11",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 11,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/11"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/22"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 15",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 15,
+     "size": 1.5,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/15"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 21",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 21,
+     "size": 1.3,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/21"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 4",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 4,
+     "size": 1.3,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/4"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 4",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 4,
+     "size": 1.3,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/4"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 21",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 21,
+     "size": 1.3,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/21"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 3,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/3"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 9,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_a | 9",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/9"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 21,
+     "size": 0.9,
+     "title": "pull_request | org_b | repo_d | 21",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/21"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 14,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_a | 14",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/14"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 14,
+     "size": 0.9,
+     "title": "pull_request | org_a | repo_a | 14",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/14"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 21,
+     "size": 0.9,
+     "title": "pull_request | org_b | repo_d | 21",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/21"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 21,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_a | 21",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/21"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 15,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 15",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/15"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 30",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 30,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/30"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 2,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/2"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 9,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_a | 9",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/9"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 3,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/3"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 23",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 23,
+     "size": 2.2,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/23"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 18",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 18,
+     "size": 2.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/18"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_c | 7",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 7,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/7"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 5,
+     "size": 2.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/5"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 18",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 18,
+     "size": 2.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/18"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 23",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 23,
+     "size": 2.2,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/23"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 14,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_b | 14",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/14"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 4,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_c | 4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/4"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 18,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_a | 18",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/18"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 10,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_b | 10",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/10"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 11",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 11,
+     "size": 1.2,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/11"
+    },
+    "right": {
+     "title": "issue | org_b | repo_c | 5",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 5,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/5"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 5,
+     "size": 2.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/5"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 20",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 20,
+     "size": 2.1,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/20"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 23,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_a | 23",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/23"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 20,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_b | 20",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/20"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 22",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 22,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/22"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 25,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_b | 25",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/25"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 9,
+     "size": 1.9,
+     "title": "pull_request | org_b | repo_d | 9",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/9"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 6,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_a | 6",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/6"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 6,
+     "size": 0.8,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/6"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 17,
+     "size": 0.8,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/17"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 5,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 5",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/5"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 12,
+     "size": 0.4,
+     "title": "pull_request | org_b | repo_d | 12",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/12"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 19,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_d | 19",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/19"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 3,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_c | 3",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/3"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 6,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/6"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 13,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 13",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/13"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 6,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_c | 6",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/6"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 20,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 20",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/20"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 25,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_b | 25",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/25"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 22",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 22,
+     "size": 1.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/22"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 1,
+     "size": 1.5,
+     "title": "pull_request | org_b | repo_c | 1",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/1"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 23,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_a | 23",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/23"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 6,
+     "size": 1.9,
+     "title": "pull_request | org_a | repo_a | 6",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/6"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 9,
+     "size": 1.9,
+     "title": "pull_request | org_b | repo_d | 9",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/9"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 17",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 17,
+     "size": 0.8,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/17"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 6,
+     "size": 0.8,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/6"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 2,
+     "size": 0.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/2"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 28",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 28,
+     "size": 0.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/28"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 13,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 13",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/13"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 6",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 6,
+     "size": 0.4,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/6"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 3,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_c | 3",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/3"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 21,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_a | 21",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/21"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 4,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_c | 4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/4"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 14,
+     "size": 0.5,
+     "title": "pull_request | org_a | repo_b | 14",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/14"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_c | 5",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 5,
+     "size": 1.2,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/5"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 11",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 11,
+     "size": 1.2,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/11"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/22"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 3,
+     "size": 1.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/3"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 20",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 20,
+     "size": 2.1,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/20"
+    },
+    "right": {
+     "title": "issue | org_b | repo_c | 7",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 7,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/7"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 7,
+     "size": 1.1,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/7"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 2,
+     "size": 1.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/2"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 3",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 3,
+     "size": 1.5,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/3"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 22",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 22,
+     "size": 1.5,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/22"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 20,
+     "size": 1.5,
+     "title": "pull_request | org_a | repo_b | 20",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/20"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 1,
+     "size": 1.5,
+     "title": "pull_request | org_b | repo_c | 1",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/1"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 10,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_b | 10",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/10"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 18,
+     "size": 1.1,
+     "title": "pull_request | org_a | repo_a | 18",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/18"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 5,
+     "size": 0.9,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/5"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 16",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 16,
+     "size": 0.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/16"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 16",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 16,
+     "size": 0.9,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/16"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 5",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 5,
+     "size": 0.9,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/5"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 3,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_d | 3",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/3"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 6,
+     "size": 1.1,
+     "title": "pull_request | org_b | repo_c | 6",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/6"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 12,
+     "size": 0.4,
+     "title": "pull_request | org_b | repo_d | 12",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/12"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 5,
+     "size": 0.4,
+     "title": "pull_request | org_a | repo_b | 5",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/5"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 2",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 2,
+     "size": 1.1,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/2"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 7,
+     "size": 1.1,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/7"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 1,
+     "size": 1.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/1"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 15,
+     "size": 1.4,
+     "title": "pull_request | org_a | repo_a | 15",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/15"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 15,
+     "size": 1.4,
+     "title": "pull_request | org_a | repo_a | 15",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/15"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 1",
+     "github_user_name": "user_0",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 1,
+     "size": 1.4,
+     "reviewer": "user_1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/1"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_c | 2",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 2,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/2"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 24,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 24",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/24"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 24,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 24",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/24"
+    },
+    "right": {
+     "title": "issue | org_b | repo_c | 2",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 2,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/issues/2"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 7,
+     "size": 1.6,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/7"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 2,
+     "size": 1.6,
+     "title": "pull_request | org_a | repo_b | 2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/2"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 32",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 32,
+     "size": 1.0,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/32"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 14,
+     "size": 1.0,
+     "title": "pull_request | org_b | repo_d | 14",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/14"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 2,
+     "size": 1.6,
+     "title": "pull_request | org_a | repo_b | 2",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/2"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 7",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 7,
+     "size": 1.6,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/7"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 14,
+     "size": 1.0,
+     "title": "pull_request | org_b | repo_d | 14",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/14"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 32",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 32,
+     "size": 1.0,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/32"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 33",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 33,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/33"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 26",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 26,
+     "size": 2.0,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/26"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 26",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 26,
+     "size": 2.0,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/26"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 33",
+     "github_user_name": "user_4",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 33,
+     "size": 2.1,
+     "reviewer": "user_0",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/33"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 7,
+     "size": 2.4,
+     "title": "pull_request | org_a | repo_a | 7",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/7"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 8,
+     "size": 2.3,
+     "title": "pull_request | org_b | repo_c | 8",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/8"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_c",
+     "number": 8,
+     "size": 2.3,
+     "title": "pull_request | org_b | repo_c | 8",
+     "label": [
+      "ICP_C"
+     ],
+     "github_url": "https://github.com/org_b/repo_c/pull/8"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 7,
+     "size": 2.4,
+     "title": "pull_request | org_a | repo_a | 7",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/7"
+    },
+    "github_user_name": "user_1"
+   },
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 4,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 4",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/4"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 11,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 11",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/11"
+    },
+    "github_user_name": "user_2"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 11,
+     "size": 1.7,
+     "title": "pull_request | org_a | repo_b | 11",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/11"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 19,
+     "size": 1.8,
+     "title": "pull_request | org_a | repo_b | 19",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/19"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 16,
+     "size": 2.1,
+     "title": "pull_request | org_a | repo_a | 16",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/16"
+    },
+    "right": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 27,
+     "size": 2.0,
+     "title": "pull_request | org_a | repo_b | 27",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/27"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "github_user_name": "user_3",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 27,
+     "size": 2.0,
+     "title": "pull_request | org_a | repo_b | 27",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/27"
+    },
+    "right": {
+     "github_user_name": "user_2",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 16,
+     "size": 2.1,
+     "title": "pull_request | org_a | repo_a | 16",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/pull/16"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 12",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 12,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/12"
+    },
+    "right": {
+     "title": "issue | org_b | repo_d | 17",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 17,
+     "size": 1.8,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/17"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_b | repo_d | 17",
+     "github_user_name": "user_3",
+     "type": "issue",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 17,
+     "size": 1.8,
+     "reviewer": "user_4",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/issues/17"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 12",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 12,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/12"
+    },
+    "github_user_name": "user_4"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_b | 18",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 18,
+     "size": 1.6,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/18"
+    },
+    "right": {
+     "title": "issue | org_a | repo_a | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 10,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/10"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "title": "issue | org_a | repo_a | 10",
+     "github_user_name": "user_1",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_a",
+     "number": 10,
+     "size": 1.7,
+     "reviewer": "user_2",
+     "label": [
+      "ICP_A"
+     ],
+     "github_url": "https://github.com/org_a/repo_a/issues/10"
+    },
+    "right": {
+     "title": "issue | org_a | repo_b | 18",
+     "github_user_name": "user_2",
+     "type": "issue",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 18,
+     "size": 1.6,
+     "reviewer": "user_3",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/issues/18"
+    },
+    "github_user_name": "user_3"
+   },
+   {
+    "left": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 29,
+     "size": 0.6,
+     "title": "pull_request | org_a | repo_b | 29",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/29"
+    },
+    "right": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 9,
+     "size": 0.8,
+     "title": "pull_request | org_a | repo_b | 9",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/9"
+    },
+    "github_user_name": "user_0"
+   },
+   {
+    "left": {
+     "github_user_name": "user_1",
+     "type": "pull_request",
+     "organization": "org_a",
+     "repository": "repo_b",
+     "number": 9,
+     "size": 0.8,
+     "title": "pull_request | org_a | repo_b | 9",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_a/repo_b/pull/9"
+    },
+    "right": {
+     "github_user_name": "user_4",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 19,
+     "size": 0.6,
+     "title": "pull_request | org_b | repo_d | 19",
+     "label": [
+      "ICP_D"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/19"
+    },
+    "github_user_name": "user_0"
+   }
+  ],
+  "no_have_ei_issue_pair_list": [],
+  "total_weight": 89412.45679999999
+ }
+}

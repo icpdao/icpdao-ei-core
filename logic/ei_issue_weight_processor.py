@@ -21,10 +21,10 @@ class EiIssueWeightProcessor:
 
         coder_ability_list = self.ei_config.coder_ability_list
 
-        if coder_ability_list[ei_issue_2.contributer] > coder_ability_list[ei_issue_1.contributer]:
-            cr = coder_ability_list[ei_issue_2.contributer] / coder_ability_list[ei_issue_1.contributer]
+        if coder_ability_list.get(ei_issue_2.contributer, 1) > coder_ability_list.get(ei_issue_1.contributer, 1):
+            cr = coder_ability_list.get(ei_issue_2.contributer, 1) / coder_ability_list.get(ei_issue_1.contributer, 1)
         else:
-            cr = coder_ability_list[ei_issue_1.contributer] / coder_ability_list[ei_issue_2.contributer]
+            cr = coder_ability_list.get(ei_issue_1.contributer, 1) / coder_ability_list.get(ei_issue_2.contributer, 1)
 
         weight = self.ei_config.user_ability_rate / cr
         

@@ -64,7 +64,7 @@ class EiConfig:
         # 如果投票者是配对中 ISSUE 的 REVIEWER 时，会增加权重
         # 这个值代表 增加的权重的默认系数
         # 如果 pair_reviewer_rate_list 中设置了，会按照 pair_reviewer_rate_list 的值
-        pair_reviewer_rate = 15  # issue对与人员的对应，是reviewer的权值
+        pair_reviewer_rate = 15
 
         # 没有用到
         reserved_word = ["ICP", "IN PROGRESS", "BUG"]

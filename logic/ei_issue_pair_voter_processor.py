@@ -5,26 +5,39 @@ from .ei_issue_pair_weight_processor import EiIssuePairWeightProcessor
 
 
 class EiIssuePairVoterProcessor:
-    def __init__(self, ei_issue_pair_list, voter_dict, ei_config, prev_voter_history_rate=None, prev_prev_voter_history_rate=None):
+    def __init__(self, ei_issue_pair_list, voter_count_dict, ei_config, prev_voter_history_rate=None, prev_prev_voter_history_rate=None):
         self.ei_issue_pair_list = ei_issue_pair_list
-        self.voter_dict = voter_dict
+        self.voter_count_dict = voter_count_dict
         self.ei_config = ei_config
+
+        self.voter_info_dict = self.build_voter_info_dict(self.ei_issue_pair_list)
 
         self.prev_voter_history_rate = prev_voter_history_rate
         self.prev_prev_voter_history_rate = prev_prev_voter_history_rate
 
         self.weight_processor = EiIssuePairWeightProcessor(ei_issue_pair_list, self.ei_config, prev_voter_history_rate, prev_prev_voter_history_rate)
 
-        new_voter_dict = dict()
-        for key in self.voter_dict:
+        new_voter_count_dict = dict()
+        for key in self.voter_count_dict:
             if key in self.ei_config.tmp_skip_voter_list:
                 continue
-            new_voter_dict[key] = self.voter_dict[key]
-        self.voter_dict = new_voter_dict
+            new_voter_count_dict[key] = self.voter_count_dict[key]
+        self.voter_count_dict = new_voter_count_dict
 
         self.have_voter_ei_issue_pair_list = []
         self.no_have_ei_issue_pair_list = []
         self.total_weight = 0
+
+    def build_voter_info_dict(self, ei_issue_pair_list):
+        res = {}
+        for ei_issue_pair in ei_issue_pair_list:
+            leftc = ei_issue_pair.left.contributer
+            rightc = ei_issue_pair.right.contributer
+            if not res.get(leftc.name):
+                res[leftc.name] = leftc
+            if not res.get(rightc.name):
+                res[rightc.name] = rightc
+        return res
 
     @property
     def info(self):
@@ -47,16 +60,17 @@ class EiIssuePairVoterProcessor:
             return self.info
 
         voter_list = []
-        for key in self.voter_dict:
+        for key in self.voter_count_dict:
             name = key
-            count = int(self.voter_dict[key]*1.2)
+            count = int(self.voter_count_dict[key]*1.2)
             name_list = [name for i in range(count)]
             voter_list += name_list
 
         # 获取权重矩阵
         weight_matrix = [[0 for j in range(len(voter_list))] for i in range(len(self.ei_issue_pair_list))]
         for x_index, ei_issue_pair in enumerate(self.ei_issue_pair_list):
-            for y_index, voter in enumerate(voter_list):
+            for y_index, voter_name in enumerate(voter_list):
+                voter = self.voter_info_dict[voter_name]
                 weight_matrix[x_index][y_index] = self.weight_processor.get_weight(ei_issue_pair, voter)
                 
 
@@ -73,25 +87,27 @@ class EiIssuePairVoterProcessor:
             ei_issue_pair = self.ei_issue_pair_list[mat[0]]
             c = voter_list[mat[1]]
 
-            weight = self.weight_processor.get_weight(ei_issue_pair, c)
+            voter = self.voter_info_dict[c]
+            weight = self.weight_processor.get_weight(ei_issue_pair, voter)
 
             if weight >= 0:
-                ei_issue_pair.c = c
+                ei_issue_pair.c = voter
                 have_voter_ei_issue_pair_list.append(ei_issue_pair)
                 total_weight += weight
             else:
                 no_have_ei_issue_pair_list.append(ei_issue_pair)
 
         if len(no_have_ei_issue_pair_list) != 0:
-            for c in self.voter_dict:
-                count = self.voter_dict[c]
+            for c in self.voter_count_dict:
+                count = self.voter_count_dict[c]
                 add_count = math.ceil(count * 0.1)
                 current_count = 0
                 tmp_list = no_have_ei_issue_pair_list[:]
                 for ei_issue_pair in tmp_list:
-                    weight = self.weight_processor.get_weight(ei_issue_pair, c)
+                    voter = self.voter_info_dict[c]
+                    weight = self.weight_processor.get_weight(ei_issue_pair, voter)
                     if weight >= 0:
-                        ei_issue_pair.c = c
+                        ei_issue_pair.c = voter
                         have_voter_ei_issue_pair_list.append(ei_issue_pair)
                         no_have_ei_issue_pair_list.remove(ei_issue_pair)
                         total_weight += weight
@@ -105,9 +121,10 @@ class EiIssuePairVoterProcessor:
                 current_count = 0
                 tmp_list = no_have_ei_issue_pair_list[:]
                 for ei in tmp_list:
-                    weight = self.weight_processor.get_weight(ei_issue_pair, c)
+                    voter = self.voter_info_dict[c]
+                    weight = self.weight_processor.get_weight(ei_issue_pair, voter)
                     if weight >= 0:
-                        ei_issue_pair.c = c
+                        ei_issue_pair.c = voter
                         have_voter_ei_issue_pair_list.append(ei)
                         no_have_ei_issue_pair_list.remove(ei)
                         total_weight += weight

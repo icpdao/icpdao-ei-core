@@ -4,6 +4,8 @@ import os
 import json
 
 from models.ei_issue import EiIssue
+from models.ei_user import EiUser
+
 from logic.ei_processor import EiProcessor
 
 test_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), './')
@@ -13,21 +15,28 @@ def test_first():
 
     ei_issue_list = []
     for issue in issues:
+        contributer = EiUser(
+            name=issue['contributer']['name'],
+            labels=issue['contributer']['labels'],
+        )
+        reviewer = EiUser(
+            name=issue['reviewer']['name'],
+            labels=issue['reviewer']['labels'],
+        )
         ei_issue = EiIssue(
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
             number = issue['number'],
             title = issue['title'],
-            contributer = issue['contributer'],
+            contributer = contributer,
             labels = issue['labels'],
             size = issue['size'],
-            reviewer = issue['reviewer'],
+            reviewer = reviewer,
             pr_org = issue['pr_org'],
             pr_repo = issue['pr_repo']
         )
         ei_issue_list.append(ei_issue)
-
 
     ep = EiProcessor('first', ei_issue_list)
     ep.process()

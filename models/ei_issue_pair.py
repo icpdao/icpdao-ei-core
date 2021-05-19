@@ -12,12 +12,12 @@ class EiIssuePair:
         return {
             "left": self.left.to_dict(),
             "right": self.right.to_dict(),
-            "github_user_name": self.c
+            "user": self.c.to_dict()
         }
 
     def debug_info(self):
         return "{} <===>  {}   user:{}".format(
             self.left.debug_info(),
             self.right.debug_info(),
-            self.c
+            self.c.name
         )

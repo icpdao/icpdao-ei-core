@@ -26,7 +26,7 @@ class EiProcessor(object):
     def build_c_dict(self):
         c_dict = {}
         for ei in self.ei_issue_list:
-            name = ei.contributer
+            name = ei.contributer.name
             count = c_dict.get(name, 0)
             c_dict[name] = count + 1
         return c_dict
@@ -34,7 +34,7 @@ class EiProcessor(object):
     def build_c_stat_dict(self, ei_issue_list):
         c_stat_dict = {}
         for issue in ei_issue_list:
-            user_name = issue.contributer
+            user_name = issue.contributer.name
             user_stat = c_stat_dict.get(user_name, {})
             issue_count = user_stat.get("issue_count", 0)
             issue_size = user_stat.get("issue_size", 0)

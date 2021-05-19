@@ -8,11 +8,11 @@ class EiIssue(object):
         :param number: issue' github number
 
         :param title: github issue title
-        :param contributer: issue contributer
+        :param contributer: issue contributer  EiUser type
         :param labels: label list
         
         :param size: issue size
-        :param reviewer: pr reviewer
+        :param reviewer: pr reviewer  EiUser type
 
         :param pr_org: issue'pr org
         :param pr_repo: issue'pr repo
@@ -26,7 +26,8 @@ class EiIssue(object):
         self.title = title
         self.contributer = contributer
         self.labels = set(labels)
-        
+        self.label_info = self.parse_labels(labels)
+
         self.size = size
         self.reviewer = reviewer
 
@@ -34,6 +35,32 @@ class EiIssue(object):
         self.pr_repo = pr_repo
 
         self.id = self.build_id()
+
+
+    # lables ['XXX_0.1', 'YYY', 'ZZZ_D']
+    # result {
+    #   'XXX_0.1':0.1,
+    #   'YYY':  1,
+    #   'ZZZ_D': 1
+    # }
+    def parse_labels(self, labels):
+        result = {}
+        for label in labels:
+            arr = label.split('_')
+            if len(arr) == 1:
+                result[label] = 1
+                continue
+            last = arr[-1]
+            try:
+                number = float(last)
+                new_label = "_".join(arr[0:-1])
+                result[new_label] = number
+                continue
+            except:
+                result[label] = 1
+                continue
+
+        return result
 
     def build_id(self):
         return "{}/{}/{}".format(self.org, self.repo, self.number)
@@ -45,13 +72,13 @@ class EiIssue(object):
         if self.type == 'issue':
             return {
                 "title": self.title,
-                "github_user_name": self.contributer,
+                "github_user_name": self.contributer.name,
                 "type": "issue",
                 "organization": self.org,
                 "repository": self.repo,
                 "number": self.number,
                 "size": self.size,
-                "reviewer": self.reviewer,
+                "reviewer": self.reviewer.name,
                 "label": list(self.labels),
                 "github_url": "https://github.com/{}/{}/issues/{}".format(
                     self.org,
@@ -62,7 +89,7 @@ class EiIssue(object):
 
         if self.type == 'pull_request':
             return {
-                "github_user_name": self.contributer,
+                "github_user_name": self.contributer.name,
                 "type": "pull_request",
                 "organization": self.org,
                 "repository": self.repo,
@@ -78,4 +105,4 @@ class EiIssue(object):
             }
 
     def debug_info(self):
-        return "{}---{}--{}--{}--{} ".format(self.id, 'I' if self.type == 'issue' else 'P', self.size, self.labels, self.contributer)
+        return "{}---{}--{}--{}--{} ".format(self.id, 'I' if self.type == 'issue' else 'P', self.size, self.labels, self.contributer.name)

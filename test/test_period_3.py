@@ -3,6 +3,7 @@ import json
 import os
 import json
 
+from models.ei_user import EiUser
 from models.ei_issue import EiIssue
 from models.ei_issue_pair import EiIssuePair
 from logic.issue_pair_voter_history_rate import IssuePairVoterHistoryRate
@@ -16,16 +17,24 @@ def test_first():
 
     ei_issue_list = []
     for issue in issues:
+        contributer = EiUser(
+            name=issue['contributer']['name'],
+            labels=issue['contributer']['labels'],
+        )
+        reviewer = EiUser(
+            name=issue['reviewer']['name'],
+            labels=issue['reviewer']['labels'],
+        )
         ei_issue = EiIssue(
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
             number = issue['number'],
             title = issue['title'],
-            contributer = issue['contributer'],
+            contributer = contributer,
             labels = issue['labels'],
             size = issue['size'],
-            reviewer = issue['reviewer'],
+            reviewer = reviewer,
             pr_org = issue['pr_org'],
             pr_repo = issue['pr_repo']
         )
@@ -35,16 +44,24 @@ def test_first():
     period_1_issues = json.load(open(os.path.join(test_path, 'data/period_1_issues.json')))
     period_1_title_2_issue = {}
     for issue in period_1_issues:
+        contributer = EiUser(
+            name=issue['contributer']['name'],
+            labels=issue['contributer']['labels'],
+        )
+        reviewer = EiUser(
+            name=issue['reviewer']['name'],
+            labels=issue['reviewer']['labels'],
+        )
         ei_issue = EiIssue(
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
             number = issue['number'],
             title = issue['title'],
-            contributer = issue['contributer'],
+            contributer = contributer,
             labels = issue['labels'],
             size = issue['size'],
-            reviewer = issue['reviewer'],
+            reviewer = reviewer,
             pr_org = issue['pr_org'],
             pr_repo = issue['pr_repo']
         )
@@ -55,25 +72,37 @@ def test_first():
     for pair in period_1_assignees_info["ei_issue_pair_voter_processor_info"]["have_voter_ei_issue_pair_list"]:
         left = period_1_title_2_issue[pair["left"]["title"]]
         right = period_1_title_2_issue[pair["right"]["title"]]
-        c = pair["github_user_name"]
+        c = pair["user"]
+        voter = EiUser(
+            name=c['name'],
+            labels=c['labels'],
+        )
         eip = EiIssuePair(left, right)
-        eip.c = c
+        eip.c = voter
         period_1_ei_issue_pair_list.append(eip)
 
 
     period_2_issues = json.load(open(os.path.join(test_path, 'data/period_2_issues.json')))
     period_2_title_2_issue = {}
     for issue in period_2_issues:
+        contributer = EiUser(
+            name=issue['contributer']['name'],
+            labels=issue['contributer']['labels'],
+        )
+        reviewer = EiUser(
+            name=issue['reviewer']['name'],
+            labels=issue['reviewer']['labels'],
+        )
         ei_issue = EiIssue(
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
             number = issue['number'],
             title = issue['title'],
-            contributer = issue['contributer'],
+            contributer = contributer,
             labels = issue['labels'],
             size = issue['size'],
-            reviewer = issue['reviewer'],
+            reviewer = reviewer,
             pr_org = issue['pr_org'],
             pr_repo = issue['pr_repo']
         )
@@ -84,9 +113,13 @@ def test_first():
     for pair in period_2_assignees_info["ei_issue_pair_voter_processor_info"]["have_voter_ei_issue_pair_list"]:
         left = period_2_title_2_issue[pair["left"]["title"]]
         right = period_2_title_2_issue[pair["right"]["title"]]
-        c = pair["github_user_name"]
+        c = pair["user"]
+        voter = EiUser(
+            name=c['name'],
+            labels=c['labels'],
+        )
         eip = EiIssuePair(left, right)
-        eip.c = c
+        eip.c = voter
         period_2_ei_issue_pair_list.append(eip)
 
 

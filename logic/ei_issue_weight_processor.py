@@ -12,34 +12,36 @@ class EiIssueWeightProcessor:
             self.issue_pair_is_in[ep.id] = True
 
     def get_weight(self, ei_issue_1, ei_issue_2):
-        if ei_issue_1.contributer == ei_issue_2.contributer:
+        # 贡献者相同
+        if ei_issue_1.contributer.name == ei_issue_2.contributer.name:
             return self.ei_config.invalid_same_c_rate
 
+        # 相同的配对
         pair = EiIssuePair(ei_issue_1, ei_issue_2)
         if self.issue_pair_is_in.get(pair.id, False):
             return self.ei_config.invalid_same_dup_rate
-
-        coder_ability_list = self.ei_config.coder_ability_list
-
-        if coder_ability_list.get(ei_issue_2.contributer, 1) > coder_ability_list.get(ei_issue_1.contributer, 1):
-            cr = coder_ability_list.get(ei_issue_2.contributer, 1) / coder_ability_list.get(ei_issue_1.contributer, 1)
-        else:
-            cr = coder_ability_list.get(ei_issue_1.contributer, 1) / coder_ability_list.get(ei_issue_2.contributer, 1)
-
-        weight = self.ei_config.user_ability_rate / cr
         
-        weight += len(ei_issue_1.labels & ei_issue_2.labels) * self.ei_config.label_rate   # 每多一个相同的label就增加一个值
+        # lable
+        ei_issue_1_lable_info = ei_issue_1.label_info
+        ei_issue_2_lable_info = ei_issue_2.label_info
 
-        if ei_issue_1.pr_org == ei_issue_2.pr_org and ei_issue_1.pr_repo == ei_issue_2.pr_repo:   # 相同的repo
-            weight += self.ei_config.same_repo_rate
+        weight = 0
+        lables = set(ei_issue_1_lable_info.keys()) & set(ei_issue_2_lable_info.keys())
+        for label in lables:
+            weight += ei_issue_1_lable_info[label] * self.ei_config.ei_p_label_weight * self.ei_config.ei_p_label_weight_ratio
 
-        sr = (ei_issue_1.size / ei_issue_2.size) if (ei_issue_1.size > ei_issue_2.size) else (ei_issue_2.size / ei_issue_1.size )
-        weight += self.ei_config.same_size_rate/sr  # 偏差越大权值越低
+        # size
+        if ei_issue_1.size > ei_issue_2.size:
+            sr = ei_issue_1.size / ei_issue_2.size
+        else:
+            sr = ei_issue_2.size / ei_issue_1.size
+        weight += self.ei_config.ei_p_label_weight_ratio * (self.ei_config.ei_p_size_weight / sr)
 
+        # reviewer
         if ei_issue_1.reviewer == ei_issue_2.reviewer:
-            weight += self.ei_config.same_reviewer_rate
+            weight += self.ei_config.ei_p_reviewer_weight * self.ei_config.ei_p_reviewer_weight_ratio
 
-        if ei_issue_1.type == ei_issue_2.type:
-            weight += self.ei_config.type_same
+        # 在相同值的情况下增加一个随机波动
+        weight = weight*10 + (randrange(1, 100, 1)/10000)
 
-        return weight*10 + (randrange(1, 100, 1)/10000)  # 在相同值的情况下增加一个随机波动
+        return weight

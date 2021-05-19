@@ -1,4 +1,19 @@
 class EiConfig:
+    ei_p_size_weight_ratio = 1
+    ei_p_label_weight_ratio = 1
+    ei_p_reviewer_weight_ratio = 1
+
+    ei_p_size_weight = 100
+    ei_p_label_weight = 0.9
+    ei_p_reviewer_weight = 0.1
+
+    # 配对投票者
+    ei_pv_reviewer_weight_ratio = 1
+    ei_pv_label_weight_ratio = 1
+
+    ei_pv_reviewer_weight = 15
+    ei_pv_label_weight = 15
+
     def __init__(
         self,
         label_rate,

@@ -16,9 +16,11 @@ org_list = {
 labels_info = {
     "repo_a": ["ICP_A"],
     "repo_b": ["ICP_B"],
-    "repo_c": ["ICP_C"],
-    "repo_d": ["ICP_D"]
+    "repo_c": ["ICP_A"],
+    "repo_d": ["ICP_B"]
 }
+
+user_labels = ["ICP_A", "ICP_B"]
 
 number_data = {}
 
@@ -30,20 +32,20 @@ def get_number(org, repo):
     return value
 
 result = []
-user_name_list = []
+user_list = []
 
 for i in range(user_count):
     user_name = "user_{}".format(i)
-    user_name_list.append(user_name)
 
+    user_list.append({
+        "name": user_name,
+        "labels": [ user_labels[len(user_labels) % 2] ]
+    })
 
-for user_name in user_name_list:
-    index = user_name_list.index(user_name)
-    count = len(user_name_list)
-
-    reviewer_index = (index+1) % count
-    reviewer = user_name_list[reviewer_index]
-
+user_count = len(user_list) 
+for index, user in enumerate(user_list):
+    reviewer_index = (index+1) % user_count
+    reviewer = user_list[reviewer_index]
 
     for size in persion_size:
         range_count = random.randint(persion_issue_count*persion_issue_range[0], persion_issue_count*persion_issue_range[1])
@@ -69,7 +71,7 @@ for user_name in user_name_list:
                 "repo": repo,
                 "number": repo_number,
                 "title": "{} | {} | {} | {}".format(_type, org, repo, repo_number),
-                "contributer": user_name,
+                "contributer": user,
                 "labels": labels,
                 "size": range_size,
                 "reviewer": reviewer,

@@ -35,13 +35,6 @@ class EiIssuePairWeightProcessor:
         # 历史 review 和当前配对相同，减少一些权重
         weight += self._get_history_weight(ei_issue_pair, c)
 
-        coder_ability_list_for_reviewer = self.ei_config.coder_ability_list_for_reviewer
-        pair_user_ability_rate = self.ei_config.pair_user_ability_rate
-
-        left_c_coder_ability_list_for_reviewer = coder_ability_list_for_reviewer.get(ei_issue_pair.left.contributer.name, 1)
-        right_c_coder_ability_list_for_reviewer = coder_ability_list_for_reviewer.get(ei_issue_pair.right.contributer.name, 1)
-        c_coder_ability_list_for_reviewer = coder_ability_list_for_reviewer.get(c, 1)
-
         ## labels
         c_label_info = voter.label_info
         c_label_set = set(c_label_info.keys())

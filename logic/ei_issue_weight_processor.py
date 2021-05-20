@@ -49,7 +49,7 @@ class EiIssueWeightProcessor:
 
         # 处理配对相同问题
         #     一个人，一个ISSUE时，允许配对相同 flag_1
-        #     其他情况权重减半
+        #     其他情况权重下降一个梯队
         flag_1 = self.user_count == 1 and self.issue_count == 1
 
         if not flag_1:

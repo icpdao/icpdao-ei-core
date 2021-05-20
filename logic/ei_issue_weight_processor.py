@@ -6,31 +6,38 @@ class EiIssueWeightProcessor:
     """
     issue 配对权重计算
     """
-    def __init__(self, ei_issue_list, ei_config):
-        self.ei_issue_list = ei_issue_list
+    def __init__(self, user_count, issue_count, issue_more_half_user_name, ei_config, issue_pair_list):
+        self.issue_more_half_user_name = issue_more_half_user_name
+        self.user_count = user_count
+        self.issue_count = issue_count
         self.ei_config = ei_config
+        self.issue_pair_list = issue_pair_list
+
         self.issue_pair_is_in = {}
 
-        self.issue_more_half_user_name = None
-        self.user_count = 0
-        self.issue_count = len(self.ei_issue_list)
+        self.prev_issue_pair_is_in = {}
+        self.prev_issue_count = {}
+        self.build_prev_pair()
 
-        user_issue_is_in = {}
-        for ei_issue in self.ei_issue_list: 
-            user_issue_is_in.setdefault(ei_issue.contributer.name, {})
-            user_issue_is_in[ei_issue.contributer.name][ei_issue.id] = True
+    def build_prev_pair(self):
+        for pair in self.issue_pair_list:
+            self.prev_issue_pair_is_in[pair.id] = True
 
-        self.user_count = len(list(user_issue_is_in.keys()))
-        for user_name in user_issue_is_in:
-            count = len(user_issue_is_in[user_name].keys())
-            if count * 2 > self.issue_count:
-                self.issue_more_half_user_name = user_name
+            self.prev_issue_count.setdefault(pair.left.id, 0)
+            self.prev_issue_count.setdefault(pair.right.id, 0)
+            self.prev_issue_count[pair.left.id] += 1
+            self.prev_issue_count[pair.right.id] += 1
 
     def add_pair(self, pair):
         self.issue_pair_is_in[pair.pair_hash()] = True
 
     def get_weight(self, ei_issue_1, ei_issue_2):
-        ratio = 1
+        # 非第一轮匹配需要查看 ISSUE 出现次数
+        count_1 = self.prev_issue_count.get(ei_issue_1.id, 0)
+        count_2 = self.prev_issue_count.get(ei_issue_2.id, 0)
+        if count_1 >= 2 or count_2 >= 2:
+            return -10000
+
         # 处理贡献者相同问题
             # 一个人，允许两个贡献者相同  flag_1
             # 非一个人时，某人的ISSUE过半，允许这个人出现贡献者相同的配对？ flag_2
@@ -49,15 +56,19 @@ class EiIssueWeightProcessor:
 
         # 处理配对相同问题
         #     一个人，一个ISSUE时，允许配对相同 flag_1
-        #     其他情况权重下降一个梯队
+        # 人数大于3，允许配对相同  flag_2
+        # 其他情况，不允许配对相同
         flag_1 = self.user_count == 1 and self.issue_count == 1
+        flag_2 = self.user_count > 3
 
-        if not flag_1:
+        if not flag_1 and not flag_2:
             pair = EiIssuePair(ei_issue_1, ei_issue_2)
             if self.issue_pair_is_in.get(pair.pair_hash(), False):
                 raise "配对错误"
             if self.issue_pair_is_in.get(pair.other_pair_hash(), False):
-                ratio = 0
+                return -10000
+            if self.prev_issue_pair_is_in.get(pair.id, False):
+                return -10000
 
         # lable
         ei_issue_1_lable_info = ei_issue_1.label_info
@@ -81,8 +92,5 @@ class EiIssueWeightProcessor:
 
         # 在相同值的情况下增加一个随机波动
         weight = weight*10 + (randrange(1, 100, 1)/10000)
-
-        # 给处理配对相同问题 加一个阶梯
-        weight = weight + ratio * 10000
 
         return weight

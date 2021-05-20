@@ -1,13 +1,21 @@
 from random import randrange
 
+from models.ei_issue_pair import EiIssuePair
 
 class EiIssuePairWeightProcessor:
-    def __init__(self, ei_issue_pair_list, ei_config, prev_voter_history_rate=None, prev_prev_voter_history_rate=None):
-        self.ei_issue_pair_list = ei_issue_pair_list
+    """
+    pair 匹配投票者权重计算
+    """
+    def __init__(self, user_count, issue_count, issue_more_half_user_name, ei_config, prev_voter_history_rate=None, prev_prev_voter_history_rate=None):
+        self.user_count = user_count
+        self.issue_count = issue_count
+        self.issue_more_half_user_name = issue_more_half_user_name
         self.ei_config = ei_config
 
         self.prev_rate = prev_voter_history_rate
         self.prev_prev_rate = prev_prev_voter_history_rate
+
+        self.issue_pair_voter_name_dict = {}
 
     def _get_history_ping_rate(self, pinged, ping, rate):
         if rate and pinged in rate.rate and ping in rate.rate[pinged]:
@@ -23,14 +31,39 @@ class EiIssuePairWeightProcessor:
         rr = (ri0+li0)*2 + (ri1+li1)
         return rr*(-10)
 
+    def add_pair(self, ei_issue_pair, voter):
+        self.issue_pair_voter_name_dict.setdefault(ei_issue_pair.pair_hash(), {})
+        self.issue_pair_voter_name_dict[ei_issue_pair.pair_hash()][voter.name] = True
+
     def get_weight(self, ei_issue_pair, voter):
         c = voter.name
 
         weight = 0
 
-        # 贡献者和投票者相同
-        if c == ei_issue_pair.left.contributer.name or c == ei_issue_pair.right.contributer.name:
-            weight = -100000
+        # 投票者和贡献者相同
+            # 一个人，允许相同 flag_1
+            # 多个人时，某人的ISSUE过半时，这个人出现的贡献者相同的配对，允许相同？ flag_2
+            # 其他情况都不允许相同
+        i_1_c = ei_issue_pair.left.contributer.name
+        i_2_c = ei_issue_pair.right.contributer.name
+        v_c = voter.name
+
+        flag_1 = self.user_count == 1
+        flag_2 = not flag_1 and self.issue_more_half_user_name == i_1_c and i_1_c == i_2_c and i_2_c == v_c        
+
+        if not flag_1 and not flag_2:
+            if c == ei_issue_pair.left.contributer.name or c == ei_issue_pair.right.contributer.name:
+                return -20000
+
+        # 相同配对的处理
+            # 一个人，允许投票者相同 flag_1
+            # 其他情况下，出现相同配对，不允许投票者相同
+        flag_1 = self.user_count == 1
+        if not flag_1:
+            pair = EiIssuePair(ei_issue_pair.left, ei_issue_pair.right)
+            has = self.issue_pair_voter_name_dict.get(pair.other_pair_hash(), {}).get(v_c, None)
+            if has:
+                return -20000
 
         # 历史 review 和当前配对相同，减少一些权重
         weight += self._get_history_weight(ei_issue_pair, c)

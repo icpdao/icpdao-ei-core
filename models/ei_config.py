@@ -1,12 +1,4 @@
 class EiConfig:
-    # 配对权重
-    # 贡献者相同时，增加的权值，建议是负数
-    invalid_same_c_rate = -10000
-
-    # 配对权重
-    # 相同的issue对，第两次配对时，第二个配对得到的总权重，可以为负数
-    invalid_same_dup_rate = 0.1
-
     # 配对
     ei_p_size_weight = 100
     ei_p_label_weight = 0.9

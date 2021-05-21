@@ -81,18 +81,19 @@ class EiIssuePairVoterProcessor:
         return voter_list
 
     def other_c_voter_list(self, no_have_ei_issue_pair_list):
+        unpair_count = len(no_have_ei_issue_pair_list)
         voter_list = []
         if len(self.ei_config.other_c_list) > 0:
-            pre_count = math.ceil(len(no_have_ei_issue_pair_list) / len(self.ei_config.other_c_list))
+            # pre_count = math.ceil(unpair_count / len(self.ei_config.other_c_list))
             for name in self.ei_config.other_c_list:
-                count = pre_count * 10
+                count = unpair_count
                 name_list = [name for i in range(count)]
                 voter_list += name_list
         
         if len(voter_list) == 0:
-            pre_count = math.ceil(len(no_have_ei_issue_pair_list) / len(list(self.voter_count_dict.keys())))
+            # pre_count = math.ceil(len(no_have_ei_issue_pair_list) / len(list(self.voter_count_dict.keys())))
             for name in self.voter_count_dict:
-                count = pre_count * 10
+                count = unpair_count
                 name_list = [name for i in range(count)]
                 voter_list += name_list
         return voter_list

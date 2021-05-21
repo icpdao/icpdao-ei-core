@@ -46,8 +46,8 @@ class IssuePairVoterHistoryRate:
 
     def stat(self):
         for eip in self.period_ei_issue_pair_list:
-            left = eip.left.contributer
-            right = eip.right.contributer
+            left = eip.left.contributer.name
+            right = eip.right.contributer.name
             c = eip.c
 
             self._set_issue_pari_count_stat(left, 1)

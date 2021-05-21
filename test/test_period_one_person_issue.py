@@ -11,7 +11,7 @@ from logic.ei_processor import EiProcessor
 test_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), './')
 
 def test_first():
-    issues = json.load(open(os.path.join(test_path, 'data/period_1_issues.json')))
+    issues = json.load(open(os.path.join(test_path, 'data/period_one_person_issues.json')))
 
     ei_issue_list = []
     for issue in issues:
@@ -38,7 +38,7 @@ def test_first():
         )
         ei_issue_list.append(ei_issue)
 
-    ep = EiProcessor('first', ei_issue_list)
+    ep = EiProcessor('one_issue', ei_issue_list)
     ep.process()
     assert ep.pair_success() == True
-    # json.dump(ep.assignees_info, open(os.path.join(test_path, 'data/period_1_assignees_info.json'), "w"), ensure_ascii=False, indent=True)
+    # json.dump(ep.assignees_info, open(os.path.join(test_path, 'data/period_one_person_assignees_info.json'), "w"), ensure_ascii=False, indent=True)

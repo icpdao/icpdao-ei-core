@@ -1,0 +1,100 @@
+{
+ "period": "one_issue",
+ "c_stat_dict": {
+  "user_0": {
+   "issue_count": 1,
+   "issue_size": 0.5,
+   "issue_list": [
+    {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    }
+   ]
+  }
+ },
+ "pair_issue_info": {
+  "ei_issue_pair_list": [
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "user": {}
+   }
+  ],
+  "total_weight": 1010.008,
+  "pair_success": true
+ },
+ "pair_voter_info": {
+  "ei_issue_pair_list": [
+   {
+    "left": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "right": {
+     "github_user_name": "user_0",
+     "type": "pull_request",
+     "organization": "org_b",
+     "repository": "repo_d",
+     "number": 1,
+     "size": 0.5,
+     "title": "pull_request | org_b | repo_d | 1",
+     "label": [
+      "ICP_B"
+     ],
+     "github_url": "https://github.com/org_b/repo_d/pull/1"
+    },
+    "user": {
+     "name": "user_0",
+     "labels": [
+      "ICP_A"
+     ]
+    }
+   }
+  ],
+  "total_weight": 0.0014,
+  "pair_success": true
+ },
+ "pair_success": true
+}

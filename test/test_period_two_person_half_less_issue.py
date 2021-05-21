@@ -41,4 +41,4 @@ def test_first():
     ep = EiProcessor('one_issue', ei_issue_list)
     ep.process()
     assert ep.pair_success() == True
-    json.dump(ep.assignees_info, open(os.path.join(test_path, 'data/period_two_person_half_less_assignees_info.json'), "w"), ensure_ascii=False, indent=True)
+    # json.dump(ep.assignees_info, open(os.path.join(test_path, 'data/period_two_person_half_less_assignees_info.json'), "w"), ensure_ascii=False, indent=True)

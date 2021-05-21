@@ -1,4 +1,5 @@
 import logging
+import time
 
 from .kuhn_munkres import KuhnMunkres
 from models.ei_issue_pair import EiIssuePair
@@ -26,17 +27,17 @@ class EiIssuePairIssueProcessor:
     def pair_success(self):
         return self.pair_success
 
-    def process(self):
+    def try_process(self):
+        self.pair_success = False
+        self.pair_dict = {}
+        self.ei_issue_pair_is_in = {}
+        self.ei_issue_pair_id_blacklist_is_in = {}
+        
         self.ei_issue_pair_list = []
         self.un_pair_ei_issue_list = []
         self.total_weight = 0
 
-        if len(self.ei_issue_list) == 0:
-            self.pair_success = True
-            return
-
-        self.pair_success = False
-        for i in range(20):
+        for i in range(3):
             print("开始配对，第 {} 次...".format(i+1))
             self.pair_ei_issue()
             if len(self.ei_issue_pair_list) == len(self.ei_issue_list):
@@ -50,6 +51,22 @@ class EiIssuePairIssueProcessor:
             self.pair_success = True
         else:
             self.pair_success = False
+            print("配对失败，马上重新开始")
+            time.sleep(1)
+
+    def process(self):
+        self.ei_issue_pair_list = []
+        self.un_pair_ei_issue_list = []
+        self.total_weight = 0
+
+        if len(self.ei_issue_list) == 0:
+            self.pair_success = True
+            return
+
+        for i in range(20):
+            self.try_process()
+            if self.pair_success:
+                break
 
         print("issue 配对结束：{}  配对数量：{}/{}".format(
             ("成功" if self.pair_success else "失败" ),

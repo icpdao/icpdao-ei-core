@@ -124,7 +124,6 @@ class EiIssuePairVoterProcessor:
         self.total_weight += self.pair(voter_list, self.no_have_ei_issue_pair_list)
         print("第 3 次匹配投票者结束")
 
-        print(len(self.no_have_ei_issue_pair_list))
         if len(self.no_have_ei_issue_pair_list) == 0:
             self.pair_success = True
             return

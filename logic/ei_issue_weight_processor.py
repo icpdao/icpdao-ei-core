@@ -38,26 +38,32 @@ class EiIssueWeightProcessor:
         if count_1 >= 2 or count_2 >= 2:
             return -10000
 
-        # 处理贡献者相同问题
-            # 一个人，允许两个贡献者相同  flag_1
-            # 非一个人时，某人的ISSUE过半，允许这个人出现贡献者相同的配对？ flag_2
-            # 其他情况不允许两个贡献者相同
+        # 配对的两个ISSUE相同
+        #     一个ISSUE时，允许 flag_1
+        #     其他情况，不允许
+        flag_1 = self.issue_count == 1 and self.user_count == 1
+        if not flag_1:
+            if ei_issue_1.id == ei_issue_2.id:
+                return -10000
 
+        # 两个贡献者相同
+        #     一个人时，允许 flag_1
+        #     非一个人时，某人的ISSUE过半时，允许这个人出现贡献者相同的配对 flag_2
+        #     其他情况，不允许
         i_1_c = ei_issue_1.contributer.name
         i_2_c = ei_issue_2.contributer.name
 
         flag_1 = self.user_count == 1
-
         flag_2 = not flag_1 and self.issue_more_half_user_name == i_1_c and i_1_c == i_2_c
 
         if not flag_1 and not flag_2:
             if i_1_c == i_2_c:
                 return -10000
 
-        # 处理配对相同问题
-        #     一个人，一个ISSUE时，允许配对相同 flag_1
-        # 人数大于3，允许配对相同  flag_2
-        # 其他情况，不允许配对相同
+        # 配对第二次出现
+        #     一个ISSUE时，允许 flag_1
+        #     人数大于3时，允许 flag_2
+        #     其他情况，不允许
         flag_1 = self.user_count == 1 and self.issue_count == 1
         flag_2 = self.user_count > 3
 

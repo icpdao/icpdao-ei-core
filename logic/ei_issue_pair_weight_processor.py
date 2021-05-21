@@ -40,19 +40,18 @@ class EiIssuePairWeightProcessor:
         weight = 0
 
         # 投票者和贡献者相同
-            # 一个人，允许相同 flag_1
-            # 其他情况都不允许相同
+        #     一个人时，允许 flag_1
+        #     其他情况，不允许
         i_1_c = ei_issue_pair.left.contributer.name
         i_2_c = ei_issue_pair.right.contributer.name
-
         flag_1 = self.user_count == 1
         if not flag_1:
-            if c == ei_issue_pair.left.contributer.name or c == ei_issue_pair.right.contributer.name:
+            if c == i_1_c or c == i_2_c:
                 return -20000
 
-        # 相同配对的处理
-            # 一个人，允许投票者相同 flag_1
-            # 其他情况下，出现相同配对，不允许投票者相同
+        # 配对第二次出现时
+        #     一个人时，允许投票者和第一次相同 flag_1
+        #     其他情况，不允许投票者和第一次相同
         flag_1 = self.user_count == 1
         if not flag_1:
             pair = EiIssuePair(ei_issue_pair.left, ei_issue_pair.right)

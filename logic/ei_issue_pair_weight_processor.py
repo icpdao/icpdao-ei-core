@@ -41,11 +41,13 @@ class EiIssuePairWeightProcessor:
 
         # 投票者和贡献者相同
         #     一个人时，允许 flag_1
+        #     两个人时，允许 flag_2
         #     其他情况，不允许
         i_1_c = ei_issue_pair.left.contributer.name
         i_2_c = ei_issue_pair.right.contributer.name
         flag_1 = self.user_count == 1
-        if not flag_1:
+        flag_2 = self.user_count == 2
+        if not flag_1 and not flag_2:
             if c == i_1_c or c == i_2_c:
                 return -20000
 

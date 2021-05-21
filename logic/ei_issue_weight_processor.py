@@ -32,6 +32,19 @@ class EiIssueWeightProcessor:
         self.issue_pair_is_in[pair.pair_hash()] = True
 
     def get_weight(self, ei_issue_1, ei_issue_2):
+        step_weight = 0
+        # 如果某人 ISSUE 数量过半，需要分两个阶梯
+        #   某人的 两个 ISSUE 进行配对 权重要低一个阶梯
+        #   其他配对  权重要高一个阶梯
+        if self.issue_more_half_user_name:
+            i_1_c = ei_issue_1.contributer.name
+            i_2_c = ei_issue_2.contributer.name
+            h_c = self.issue_more_half_user_name
+            if i_1_c == i_2_c and i_2_c == h_c:
+                step_weight = 1000
+            else:
+                step_weight = 2000
+
         # 非第一轮匹配需要查看 ISSUE 出现次数
         count_1 = self.prev_issue_count.get(ei_issue_1.id, 0)
         count_2 = self.prev_issue_count.get(ei_issue_2.id, 0)
@@ -99,4 +112,4 @@ class EiIssueWeightProcessor:
         # 在相同值的情况下增加一个随机波动
         weight = weight*10 + (randrange(1, 100, 1)/10000)
 
-        return weight
+        return weight + step_weight

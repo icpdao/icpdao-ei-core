@@ -60,6 +60,6 @@ class EiConfig:
 
 
 default_config = EiConfig(
-    tmp_skip_voter_list = ['user_xxx'],
-    other_c_list = ["user_xxx"]
+    tmp_skip_voter_list = [],
+    other_c_list = []
 )

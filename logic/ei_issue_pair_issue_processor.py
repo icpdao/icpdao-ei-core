@@ -33,7 +33,6 @@ class EiIssuePairIssueProcessor:
         print("开始配对...")
         self.pair_success = False
         self.pair_ei_issue_first()
-
         if len(self.ei_issue_pair_list) != len(self.ei_issue_list):
             self.pair_ei_issue_addi()
 

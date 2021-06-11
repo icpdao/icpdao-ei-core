@@ -1,3 +1,5 @@
+import decimal
+
 from models.ei_issue import EiIssue
 
 from .ei_issue_pair_issue_processor import EiIssuePairIssueProcessor
@@ -47,7 +49,7 @@ class EiProcessor(object):
             user_name = issue.contributer.name
             user_stat = c_stat_dict.get(user_name, {})
             issue_count = user_stat.get("issue_count", 0)
-            issue_size = user_stat.get("issue_size", 0)
+            issue_size = user_stat.get("issue_size", decimal.Decimal('0'))
             issue_list = user_stat.get("issue_list", [])
 
             issue_count = issue_count + 1

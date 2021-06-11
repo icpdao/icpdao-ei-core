@@ -1,5 +1,6 @@
 class EiUser(object):
-    def __init__(self, name, labels):
+    def __init__(self, id, name, labels):
+        self.id = id
         self.name = name
         self.labels = labels
 
@@ -34,6 +35,7 @@ class EiUser(object):
 
     def to_dict(self):
         return {
+            "id": self.id,
             "name": self.name,
             "labels": self.labels
         }

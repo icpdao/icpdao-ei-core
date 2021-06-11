@@ -1,5 +1,5 @@
 class EiIssue(object):
-    def __init__(self, _type, org, repo, number, title, contributer, labels, size, reviewer, pr_org, pr_repo):
+    def __init__(self, id, _type, org, repo, number, title, contributer, labels, size, reviewer, pr_org, pr_repo):
         """
         :param _type: issue | pull_request
         
@@ -17,6 +17,7 @@ class EiIssue(object):
         :param pr_org: issue'pr org
         :param pr_repo: issue'pr repo
         """
+        self.id = id
         self.type = _type
 
         self.org = org
@@ -33,8 +34,6 @@ class EiIssue(object):
 
         self.pr_org = pr_org
         self.pr_repo = pr_repo
-
-        self.id = self.build_id()
 
 
     # lables ['XXX_0.1', 'YYY', 'ZZZ_D']
@@ -62,15 +61,13 @@ class EiIssue(object):
 
         return result
 
-    def build_id(self):
-        return "{}/{}/{}".format(self.org, self.repo, self.number)
-
     def __eq__(self, obj):
         return self.id == self.id
 
     def to_dict(self):
         if self.type == 'issue':
             return {
+                "id": self.id,
                 "title": self.title,
                 "github_user_name": self.contributer.name,
                 "type": "issue",
@@ -89,6 +86,7 @@ class EiIssue(object):
 
         if self.type == 'pull_request':
             return {
+                "id": self.id,
                 "github_user_name": self.contributer.name,
                 "type": "pull_request",
                 "organization": self.org,

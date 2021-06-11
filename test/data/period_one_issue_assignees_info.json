@@ -6,6 +6,7 @@
    "issue_size": 0.5,
    "issue_list": [
     {
+     "id": "pull_request_org_b_repo_d_1",
      "github_user_name": "user_0",
      "type": "pull_request",
      "organization": "org_b",
@@ -25,6 +26,7 @@
   "ei_issue_pair_list": [
    {
     "left": {
+     "id": "pull_request_org_b_repo_d_1",
      "github_user_name": "user_0",
      "type": "pull_request",
      "organization": "org_b",
@@ -38,6 +40,7 @@
      "github_url": "https://github.com/org_b/repo_d/pull/1"
     },
     "right": {
+     "id": "pull_request_org_b_repo_d_1",
      "github_user_name": "user_0",
      "type": "pull_request",
      "organization": "org_b",
@@ -53,13 +56,14 @@
     "user": {}
    }
   ],
-  "total_weight": 1010.008,
+  "total_weight": 26010.0081,
   "pair_success": true
  },
  "pair_voter_info": {
   "ei_issue_pair_list": [
    {
     "left": {
+     "id": "pull_request_org_b_repo_d_1",
      "github_user_name": "user_0",
      "type": "pull_request",
      "organization": "org_b",
@@ -73,6 +77,7 @@
      "github_url": "https://github.com/org_b/repo_d/pull/1"
     },
     "right": {
+     "id": "pull_request_org_b_repo_d_1",
      "github_user_name": "user_0",
      "type": "pull_request",
      "organization": "org_b",
@@ -86,6 +91,7 @@
      "github_url": "https://github.com/org_b/repo_d/pull/1"
     },
     "user": {
+     "id": "user_6_user_0",
      "name": "user_0",
      "labels": [
       "ICP_A"
@@ -93,7 +99,7 @@
     }
    }
   ],
-  "total_weight": 0.0014,
+  "total_weight": 0.0059,
   "pair_success": true
  },
  "pair_success": true

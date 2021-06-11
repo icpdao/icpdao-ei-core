@@ -8,6 +8,8 @@ from models.ei_user import EiUser
 
 from logic.ei_processor import EiProcessor
 
+from test.conftest import get_issue_id, get_user_id
+
 test_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), './')
 
 def test_equ():
@@ -16,14 +18,17 @@ def test_equ():
     ei_issue_list = []
     for issue in issues:
         contributer = EiUser(
+            id=get_user_id(issue['contributer']['name']),
             name=issue['contributer']['name'],
             labels=issue['contributer']['labels'],
         )
         reviewer = EiUser(
+            id=get_user_id(issue['reviewer']['name']),
             name=issue['reviewer']['name'],
             labels=issue['reviewer']['labels'],
         )
         ei_issue = EiIssue(
+            id=get_issue_id(issue['org'], issue['repo'], issue['number'], issue['type']),
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
@@ -51,14 +56,17 @@ def test_1():
     ei_issue_list = []
     for issue in issues:
         contributer = EiUser(
+            id=get_user_id(issue['contributer']['name']),
             name=issue['contributer']['name'],
             labels=issue['contributer']['labels'],
         )
         reviewer = EiUser(
+            id=get_user_id(issue['reviewer']['name']),
             name=issue['reviewer']['name'],
             labels=issue['reviewer']['labels'],
         )
         ei_issue = EiIssue(
+            id=get_issue_id(issue['org'], issue['repo'], issue['number'], issue['type']),
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
@@ -85,14 +93,17 @@ def test_2():
     ei_issue_list = []
     for issue in issues:
         contributer = EiUser(
+            id=get_user_id(issue['contributer']['name']),
             name=issue['contributer']['name'],
             labels=issue['contributer']['labels'],
         )
         reviewer = EiUser(
+            id=get_user_id(issue['reviewer']['name']),
             name=issue['reviewer']['name'],
             labels=issue['reviewer']['labels'],
         )
         ei_issue = EiIssue(
+            id=get_issue_id(issue['org'], issue['repo'], issue['number'], issue['type']),
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
@@ -119,14 +130,17 @@ def test_3():
     ei_issue_list = []
     for issue in issues:
         contributer = EiUser(
+            id=get_user_id(issue['contributer']['name']),
             name=issue['contributer']['name'],
             labels=issue['contributer']['labels'],
         )
         reviewer = EiUser(
+            id=get_user_id(issue['reviewer']['name']),
             name=issue['reviewer']['name'],
             labels=issue['reviewer']['labels'],
         )
         ei_issue = EiIssue(
+            id=get_issue_id(issue['org'], issue['repo'], issue['number'], issue['type']),
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],

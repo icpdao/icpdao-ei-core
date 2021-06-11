@@ -9,23 +9,28 @@ from models.ei_issue_pair import EiIssuePair
 from logic.issue_pair_voter_history_rate import IssuePairVoterHistoryRate
 from logic.ei_processor import EiProcessor
 
+from test.conftest import get_issue_id, get_user_id
+
 test_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), './')
 
 
-def test_first():
+def test_period_2():
     issues = json.load(open(os.path.join(test_path, 'data/period_2_issues.json')))
 
     ei_issue_list = []
     for issue in issues:
         contributer = EiUser(
+            id=get_user_id(issue['contributer']['name']),
             name=issue['contributer']['name'],
             labels=issue['contributer']['labels'],
         )
         reviewer = EiUser(
+            id=get_user_id(issue['reviewer']['name']),
             name=issue['reviewer']['name'],
             labels=issue['reviewer']['labels'],
         )
         ei_issue = EiIssue(
+            id=get_issue_id(issue['org'], issue['repo'], issue['number'], issue['type']),
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
@@ -45,14 +50,17 @@ def test_first():
     period_1_title_2_issue = {}
     for issue in period_1_issues:
         contributer = EiUser(
+            id=get_user_id(issue['contributer']['name']),
             name=issue['contributer']['name'],
             labels=issue['contributer']['labels'],
         )
         reviewer = EiUser(
+            id=get_user_id(issue['reviewer']['name']),
             name=issue['reviewer']['name'],
             labels=issue['reviewer']['labels'],
         )
         ei_issue = EiIssue(
+            id=get_issue_id(issue['org'], issue['repo'], issue['number'], issue['type']),
             _type = issue['type'],
             org = issue['org'],
             repo = issue['repo'],
@@ -74,6 +82,7 @@ def test_first():
         right = period_1_title_2_issue[pair["right"]["title"]]
         c = pair["user"]
         voter = EiUser(
+            id=c['id'],
             name=c['name'],
             labels=c['labels']
         )

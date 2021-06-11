@@ -78,6 +78,7 @@ class EiIssueWeightProcessor:
             sr = ei_issue_1.size / ei_issue_2.size
         else:
             sr = ei_issue_2.size / ei_issue_1.size
+        sr = float(sr)
         weight += self.ei_config.ei_p_label_weight_ratio * (self.ei_config.ei_p_size_weight / sr)
 
         # reviewer

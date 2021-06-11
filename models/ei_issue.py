@@ -1,3 +1,6 @@
+import decimal
+
+
 class EiIssue(object):
     def __init__(self, id, _type, org, repo, number, title, contributer, labels, size, reviewer, pr_org, pr_repo):
         """
@@ -29,7 +32,7 @@ class EiIssue(object):
         self.labels = set(labels)
         self.label_info = self.parse_labels(labels)
 
-        self.size = size
+        self.size = decimal.Decimal(str(size))
         self.reviewer = reviewer
 
         self.pr_org = pr_org

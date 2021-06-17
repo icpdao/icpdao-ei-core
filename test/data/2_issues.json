@@ -1,0 +1,52 @@
+[
+ {
+  "type": "pull_request",
+  "org": "org_b",
+  "repo": "repo_d",
+  "number": 1,
+  "title": "pull_request | org_b | repo_d | 1",
+  "contributer": {
+   "name": "user_0",
+   "labels": [
+    "ICP_A"
+   ]
+  },
+  "labels": [
+   "ICP_B"
+  ],
+  "size": 0.5,
+  "reviewer": {
+   "name": "user_1",
+   "labels": [
+    "ICP_A"
+   ]
+  },
+  "pr_org": "org_a",
+  "pr_repo": "repo_b"
+ },
+  {
+  "type": "pull_request",
+  "org": "org_b",
+  "repo": "repo_d",
+  "number": 2,
+  "title": "pull_request | org_b | repo_d | 2",
+  "contributer": {
+   "name": "user_0",
+   "labels": [
+    "ICP_A"
+   ]
+  },
+  "labels": [
+   "ICP_B"
+  ],
+  "size": 0.5,
+  "reviewer": {
+   "name": "user_1",
+   "labels": [
+    "ICP_A"
+   ]
+  },
+  "pr_org": "org_a",
+  "pr_repo": "repo_b"
+ }
+]

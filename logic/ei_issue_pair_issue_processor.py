@@ -144,11 +144,13 @@ class EiIssuePairIssueProcessor:
 
         # 配对第二次出现
         #     一个ISSUE时，允许 flag_1
-        #     人数大于3时，允许 flag_2
+        #     两个ISSUE时，允许 flag_2
+        #     人数大于3时，允许 flag_3
         #     其他情况，不允许
         flag_1 = self.user_count == 1 and self.issue_count == 1
-        flag_2 = self.user_count > 3
-        if not flag_1 and not flag_2:
+        flag_2 = self.issue_count == 2
+        flag_3 = self.user_count > 3
+        if not flag_1 and not flag_2 and not flag_3:
             pair = EiIssuePair(left, right)
             if self.ei_issue_pair_is_in.get(pair.id, False):
                 return False

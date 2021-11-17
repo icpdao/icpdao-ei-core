@@ -75,7 +75,7 @@ class EiIssuePairVoterProcessor:
     def addi_voter_list(self):
         voter_list = []
         for name in self.voter_count_dict:
-            count = math.ceil(self.voter_count_dict[name]*0.5)
+            count = math.ceil(self.voter_count_dict[name]*1)
             name_list = [name for i in range(count)]
             voter_list += name_list
         return voter_list

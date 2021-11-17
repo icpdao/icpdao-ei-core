@@ -72,10 +72,10 @@ class EiIssuePairVoterProcessor:
             voter_list += name_list
         return voter_list
 
-    def addi_voter_list(self):
+    def addi_voter_list(self, weight=1):
         voter_list = []
         for name in self.voter_count_dict:
-            count = math.ceil(self.voter_count_dict[name]*1)
+            count = math.ceil(self.voter_count_dict[name]*weight)
             name_list = [name for i in range(count)]
             voter_list += name_list
         return voter_list
@@ -116,6 +116,16 @@ class EiIssuePairVoterProcessor:
         self.total_weight += self.pair(voter_list, self.no_have_ei_issue_pair_list)
         print("第 2 次匹配投票者结束")
 
+        # TODO 临时救急修改
+        # 再匹配不全时，给每个人多分N倍票数
+        if len(self.no_have_ei_issue_pair_list) == 0:
+            self.pair_success = True
+            return
+
+        voter_list = self.addi_voter_list(3)
+        self.total_weight += self.pair(voter_list, self.no_have_ei_issue_pair_list)
+        print("第 3 次匹配投票者结束")
+
         # 仍然匹配不全时，剩下的给 other_c_list
         if len(self.no_have_ei_issue_pair_list) == 0:
             self.pair_success = True
@@ -123,7 +133,7 @@ class EiIssuePairVoterProcessor:
 
         voter_list = self.other_c_voter_list(self.no_have_ei_issue_pair_list)
         self.total_weight += self.pair(voter_list, self.no_have_ei_issue_pair_list)
-        print("第 3 次匹配投票者结束")
+        print("第 4 次匹配投票者结束")
 
         if len(self.no_have_ei_issue_pair_list) == 0:
             self.pair_success = True
